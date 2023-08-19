@@ -1,95 +1,81 @@
 <!DOCTYPE html>
 <html>
-<style>
-  bib {
-    font-size: 20px;
-  }
 
-  data {
-    font-size: 10px;
-  }
-
-  bibl {
-    font-size: 25px;
-  }
-</style>
-
-<style>
-  .link-container {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-
-  .link {
-    display: inline-block;
-    margin-right: 10px;
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-  }
-</style>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
 
 <body>
-  <div class="link-container"> </div>
-  <script>
-    fetch('links.html')
-      .then(response => response.text())
-      .then(data => {
-        const linkContainer = document.querySelector('.link-container');
-        linkContainer.innerHTML = data;
-      });
-  </script>
-</body>
+  <!-- Menu Superior -->
+  <header id="header_menu">
+    <img src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/Logo.jpg">
+    <div id="menu_container"></div>
+  </header>
 
-<body>
-  <img src="Logo.jpg" width="400px" />
+  <!-- Seção de Cursos -->
+  <div class="cursos">
+    <h4>Cursos</h4>
+    <ul>
+      <a href="https://ptb.ifsp.edu.br/index.php/superiores/engenharia-de-producao">
+        <li>Bacharelado em Engenharia de Produção</li>
+      </a>
+      <a href="/Sobre.html">
+        <li>Análise e Desenvolvimento de Sistemas</li>
+      </a>
+      <a href="https://ptb.ifsp.edu.br/index.php/superiores/licenciatura-em-letras-portugues-ingles">
+        <li>Licenciatura em Letras Português/Inglês</li>
+      </a>
+      <a href="https://ptb.ifsp.edu.br/index.php/superiores/tecnologia-em-gestao-publica">
+        <li>Tecnologia em Gestão Pública</li>
+      </a>
+    </ul>
+  </div>
 
-  <b><br><br>Cursos<br></b>
-  <ul>
-    <a href="https://ptb.ifsp.edu.br/index.php/superiores/engenharia-de-producao">
-      <li>Bacharelado em Engenharia de Produção</li>
-    </a>
-    <a href="/Sobre.html">
-      <li>Análise e Desenvolvimento de Sistemas</li>
-    </a>
-    <a href="https://ptb.ifsp.edu.br/index.php/superiores/licenciatura-em-letras-portugues-ingles">
-      <li>Licenciatura em Letras Português/Inglês</li>
-    </a>
-    <a href="https://ptb.ifsp.edu.br/index.php/superiores/tecnologia-em-gestao-publica">
-      <li>Tecnologia em Gestão Pública</li>
-    </a>
-  </ul>
-  <b><br><br>Eventos<br></b>
-  <img src="SEJA_RARO.jpg" width="250px" <p><br>Aniversário do IFSP - Pirituba - Palestra Augusto Aielo</p>
+  <!-- Seção de Eventos -->
+  <div class="eventos">
+    <h4>Eventos</h4>
+    <img src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/SEJA_RARO.jpg" width="350px">
+    <p>Aniversário do IFSP - Pirituba - Palestra Augusto Aielo</p>
+  </div>
 
-  <strong>
-    <bibl><br>Sobre a Biblioteca<br></bibl>
-  </strong>
-  <img src="library.jpg" />
+  <!-- Seção de Biblioteca-->
+  <div class="biblioteca">
+    <h3>Sobre a Biblioteca</h3>
+    <img src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/library.jpeg" width="80px">
+    <h3>Conheça os novos títulos disponíveis na nossa biblioteca</h3>
+    <h6>Publicado: Quarta-feira, 14 de agosto de 2019</h6>
+  </div>
 
-  <strong><br><br><br>
-    <bib>Conheça os novos títulos disponíveis na nossa biblioteca</bib>
-  </strong>
+  <!-- Vídeo -->
+  <div class="video">
+    <h3>Conheça o SUAP</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/yVbOcB1ryh0" title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
 
-  <strong><br><data>Publicado: Quarta-feira, 14 de agosto de 2019</data></strong>
+  <footer id="footer">
+    <span class="icones">
+      <!-- Move to Top -->
+      <a href="#top">
+        <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/MoveTop.png?raw=true" width="32px">
+      </a>
 
-  <bibl><strong><br><br>Conhecendo o SUAP</strong></bibl>
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/ifsppirituba">
+        <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/facebook.png?raw=true" width="32px">
+      </a>
+    </span>
 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/yVbOcB1ryh0" title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen></iframe>
+    <p>IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011)
+      2504-0100</p>
+  </footer>
 
-  <a href="#top">
-    <p><img src="MoveTop.png" width="30" height="30">
-  </a>
-  <a href="https://www.facebook.com/ifsppirituba/?locale=pt_BR"><img src="facebook.png" width="30" height="30"></p></a>
-  <p><data>IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato:
-      (011) 2504-0100</data></p>
-
-
-
+  <script src="script.js"></script>
 </body>
 
 </html>

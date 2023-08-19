@@ -1,31 +1,17 @@
 <!DOCTYPE html>
 <html>
-<style>
-  .link-container {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
 
-  .link {
-    display: inline-block;
-    margin-right: 10px;
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-  }
-</style>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
 
 <body>
-  <div class="link-container"> </div>
-  <script>
-    fetch('links.html')
-      .then(response => response.text())
-      .then(data => {
-        const linkContainer = document.querySelector('.link-container');
-        linkContainer.innerHTML = data;
-      });
-  </script>
+  <div id="menu_container"></div>
+  <h3>Contato</h3>
+  <script src="script.js"></script>
 </body>
 
 </html>
